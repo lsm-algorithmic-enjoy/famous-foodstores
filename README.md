@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 맛집리스트와 상세 설명을 나타내는 웹사이트 (by Next.JS)
 
-## Getting Started
+프로젝트 진행 과정 및 설명.
 
-First, run the development server:
+1. json-server를 이용한 데이터 fetching 완료.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+2. React-Bootstrap 적용.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Header에서는 프로젝트 이름(AWESOME FOOD STORE) 및 About 페이지와 Store 페이지로 이동할 수 있는 NavBar 기능 구현.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+4. STORE 리스트를 정렬된 정사각형 이미지 형태로 나타내기 위해서 CSS-Grid를 이용.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+5. About 페이지에서 간단한 프로젝트 소개 문구 확인 가능.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+6. Store 페이지 링크 클릭시 Home으로 돌아옵니다.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+7. Footer에 copyright 추가 완료.
 
-## Learn More
+8. 하나의 아이템을 선택하면 팝업(모달)을 띄워주는데 여기서 맛집에 관한 정보들을 확인이 가능합니다. (by props-drilling)
 
-To learn more about Next.js, take a look at the following resources:
+9. 팝업(모달) 오른쪽 위에 X 버튼을 클릭하면 팝업이 닫힙니다.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+10. 정의되지 않은 잘못된 url로 접근할 시 에러 메시지를 보여주고 5초 후에 메인 페이지로 이동하게 구현했습니다. (setTimeout 이용)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+# 테스트 결과 로컬에서 실행 방법
 
-## Deploy on Vercel
+1. zip 파일 다운로드 후 압축해제 혹은 clone
+2. yarn install 실행
+3. yarn dev 실행
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# 프로젝트 실행 화면
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<img src="foodstores.png"/>

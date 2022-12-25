@@ -1,0 +1,21 @@
+.container {
+  width: 800px;
+  height: 800px;
+  z-index: 999;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #868e96;
+  border-radius: 8px;
+}
+
+.end {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
